@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            text-align: center;
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        .two {
+            border: 2px solid gray;
+            border-radius: 30px;
+            height: 200px;
+            width: 200px;
+            margin-left: 440px;
+        }
+
+        .a {
+            height: 200px;
+            width: 200px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            margin-left: 50px;
+        }
+
+        #bor {
+            border: 2px solid black;
+            margin-left: 150px;
+            height: 200px;
+            width: 800px;
+        }
+
+        #trr {
+            border: 1px solid black;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    // Task 1 amazon cards
+    // for heading
+    var a = document.createElement("h1");
+    document.body.appendChild(a);
+    a.innerText = "Task1";
+    a.setAttribute("class", "one");
+
+    // for empty box
+    var b = document.createElement("h2");
+    document.body.appendChild(b);
+    b.setAttribute("class", "two");
+
+    // for image1
+    var img1 = document.createElement("img");
+    document.body.appendChild(img1);
+    img1.setAttribute("src", "https://m.media-amazon.com/images/I/81zyK2duFoL._AC_UL640_FMwebp_QL65_.jpg");
+    img1.setAttribute("class", "a");
+    img1.addEventListener("click", t1);
+
+    // for image2
+    var img2 = document.createElement("img");
+    document.body.appendChild(img2);
+    img2.setAttribute("src", "https://m.media-amazon.com/images/I/612wtQLapiL._AC_UL640_FMwebp_QL65_.jpg");
+    img2.setAttribute("class", "a");
+    img2.addEventListener("click", t2);
+
+    // for image3
+    var img3 = document.createElement("img");
+    document.body.appendChild(img3);
+    img3.setAttribute("src", "https://m.media-amazon.com/images/I/61s-3q6CYxL._AC_UL640_FMwebp_QL65_.jpg");
+    img3.setAttribute("class", "a");
+    img3.addEventListener("click", t3);
+
+    // for image4
+    var img4 = document.createElement("img");
+    document.body.appendChild(img4);
+    img4.setAttribute("src", "https://m.media-amazon.com/images/I/51rh6-761NL._AC_UY436_FMwebp_QL65_.jpg");
+    img4.setAttribute("class", "a");
+    img4.addEventListener("click", t4);
+
+    // functions
+    function t1() {
+        b.innerHTML = "<img src='https://m.media-amazon.com/images/I/81zyK2duFoL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+    }
+
+    function t2() {
+        b.innerHTML = "<img src='https://m.media-amazon.com/images/I/612wtQLapiL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+    }
+
+    function t3() {
+        b.innerHTML = "<img src='https://m.media-amazon.com/images/I/61s-3q6CYxL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+    }
+
+    function t4() {
+        b.innerHTML = "<img src='https://m.media-amazon.com/images/I/51rh6-761NL._AC_UY436_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+    }
+
+
+            //   task2-click on name then display image
+            
+// for heading
+var z = document.createElement("h1");
+document.body.appendChild(z);
+z.innerText = "Task2";
+z.setAttribute("class", "one");
+
+// create table
+var t = document.createElement("table");
+t.setAttribute("id", "bor");
+var tr = document.createElement("tr");
+tr.setAttribute("id", "trr");
+var td1 = document.createElement("td");
+td1.innerText = "image1";
+td1.addEventListener("click",cb1)
+  function cb1() {
+    td1.innerHTML = "<img src='https://m.media-amazon.com/images/I/81zyK2duFoL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+};
+
+var td2 = document.createElement("td");
+td2.innerText = "image2";
+td2.addEventListener("click",cb2) 
+function cb2() {
+    td2.innerHTML = "<img src='https://m.media-amazon.com/images/I/612wtQLapiL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+};
+
+var td3 = document.createElement("td");
+td3.innerText = "image3";
+td3.addEventListener("click",cb3)
+function cb3() {
+    td3.innerHTML = "<img src='https://m.media-amazon.com/images/I/61s-3q6CYxL._AC_UL640_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+};
+
+var td4 = document.createElement("td");
+td4.innerText = "image4";
+td4.addEventListener("click", cb4)
+function cb4() {
+    td4.innerHTML = "<img src='https://m.media-amazon.com/images/I/51rh6-761NL._AC_UY436_FMwebp_QL65_.jpg' height='200px' width='200px'>";
+};
+// to display in html page from 
+document.body.appendChild(t);
+t.appendChild(tr);
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+tr.appendChild(td4);
+
+
+</script>
+</body>
+</html>
